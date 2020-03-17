@@ -16,11 +16,11 @@ beforeEach(async () =>{
 
   factory = await new web3.eth.Contract(JSON.parse(compiledFactory.interface))
     .deploy({ data: compiledFactory.bytecode})
-    .send({from: accounts[0], gas: '1000000'});
+    .send({from: accounts[0], gas: '1500000'});
 
   await factory.methods.createMail().send({
     from: accounts[0],
-    gas: '1000000'
+    gas: '1500000'
   });
 
   const addresses = await factory.methods.getDeployedMails().call();
@@ -35,5 +35,4 @@ describe('Mails', () => {
     assert.ok(factory.options.address);
     assert.ok(mail.options.address);
   })
-
 });
