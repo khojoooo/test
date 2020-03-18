@@ -34,5 +34,17 @@ describe('Mails', () => {
   it('deploys a factory and a campaign',() =>{
     assert.ok(factory.options.address);
     assert.ok(mail.options.address);
-  })
+  });
+
+  it('Add a new mail', async () =>{
+    await mail.methods.addSenderInfo('최민호', '010-3150-3144', 'clilc@naver.com', '부산광역시 해운대구 해운대로').send({
+      from: accounts[1]
+    });
+    await mail.methods.addReceiverInfo('김호준', '010-1234-5678','창원특별시 창원동 창원대로').send{
+      from: accounts[1]
+    };
+    await mail.methods.addMailInfo('기밀자료', 1, 100, 'minho').send{
+      from: accounts[1]
+    };
+  });
 });
