@@ -1,23 +1,38 @@
 {
-  "name": "test",
+  "name": "whfwkrwkr",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha"
-    "dev":"next dev"
+  "main": "routes.js",
+  "directories": {
+    "test": "test"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "fs-extra": "^8.1.0",
     "ganache-cli": "^6.9.1",
-    "mocha": "^7.1.0",
     "next": "^4.1.4",
+    "next-routes": "^1.4.2",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "semantic-ui-react": "^0.88.2",
     "solc": "^0.4.17",
-    "truffle-hdwallet-provider": "0.0.3",
+    "truffle-hdwallet-provider": "^0.0.3",
     "web3": "^1.2.6"
-  }
+  },
+  "devDependencies": {
+    "mocha": "^7.1.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khojoooo/whfwkrwkr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khojoooo/whfwkrwkr/issues"
+  },
+  "homepage": "https://github.com/khojoooo/whfwkrwkr#readme"
 }
