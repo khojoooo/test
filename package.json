@@ -23,7 +23,8 @@
   },
   "scripts": {
     "test": "mocha",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev":"next dev"
   },
   "repository": {
     "type": "git",
