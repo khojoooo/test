@@ -16,7 +16,7 @@ class MailIndex extends Component {
         <Button.Group>
           <Button>사용자</Button>
           <Button.Or />
-          <Button positve>관리자</Button>
+          <Button>관리자</Button>
         </Button.Group>
       </Layout>
     );
