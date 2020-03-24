@@ -1,7 +1,6 @@
 import React from 'react';
 import { Header, Segment} from 'semantic-ui-react';
 import { Link } from '../routes';
-import './index.css';
 
 export default () => {
   return (
