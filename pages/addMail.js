@@ -196,22 +196,9 @@ class AddMail extends Component {
                   </Form.Field>
                 </Form>
               </Table.Cell>
-              <Table.Cell/>
-              <Table.Cell/>
-              <Table.Cell>
-                <Form>
-                  <Form.Field inline>
-                    <label></label>
-                  </Form.Field>
-                  <Form.Field inline>
-                    <label></label>
-                  </Form.Field>
-                  <Form.Field inline>
-                    <label></label>
-                  </Form.Field>
-                </Form>
-                <Button attached='bottom'>접수 완료</Button>
-              </Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Button attached="bottom">접수 완료</Button>
             </Table.Row>
           </Table.Body>
         </Table>
